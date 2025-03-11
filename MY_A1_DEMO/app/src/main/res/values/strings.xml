@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MY_A1_DEMO</string>
+    <string name="buttonTeleport">Teleportuj</string>
+    <string name="buttonBack">Powrót</string>
+    <string name="button4">Zmiana tła</string>
+    <string name="button3">Logcat</string>
+    <string name="button2">Komunikat</string>
+    <string name="czarny">Kolor tła: czarny</string>
+    <string name="biały">Kolor tła: biały</string>
+    <string name="zielony">Kolor tła: zielony</string>
+    <string name="żółty">Kolor tła: żółty</string>
+    <string name="niebieski">Kolor tła: niebieski</string>
+    <string name="txt">Kliknij w guzik na górze!</string>
+    <string name="p1">Przycisk 1</string>
+    <string name="p2">Przycisk 2</string>
+</resources>
