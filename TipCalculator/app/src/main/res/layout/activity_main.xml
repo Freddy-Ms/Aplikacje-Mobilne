@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/countTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="151dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTasteFood" />
+
+    <RatingBar
+        android:id="@+id/inputTasteFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="96dp"
+        android:stepSize="1"
+        android:progressTint="#FFD54F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelFoodQ" />
+
+    <Spinner
+        android:id="@+id/inputCustomerService"
+        android:layout_width="202dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="105dp"
+        android:entries="@array/customer_service_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelService" />
+
+    <EditText
+        android:id="@+id/inputPrice"
+        android:layout_width="272dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="@string/OrderPrice"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LabelApp" />
+
+    <TextView
+        android:id="@+id/LabelService"
+        android:layout_width="182dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="115dp"
+        android:text="@string/CustomerService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPrice" />
+
+    <TextView
+        android:id="@+id/LabelFoodQ"
+        android:layout_width="119dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="151dp"
+        android:text="@string/FoodQuality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCustomerService" />
+
+    <TextView
+        android:id="@+id/LabelApp"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="139dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/Price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countTip" />
+
+    <TextView
+        android:id="@+id/textTipPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Tip"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPrice" />
+
+    <TextView
+        android:id="@+id/textTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/TipA"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTipPercentage" />
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Total"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTipAmount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
