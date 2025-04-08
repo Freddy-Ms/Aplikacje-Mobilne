@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IntentionsApp</string>
+    <string name="settings">Display settings</string>
+    <string name="localization">Enter localization</string>
+    <string name="show_loc">Show on map</string>
+    <string name="makePhoto">Take a photo</string>t
+    <string name="photo">Photo</string>
+</resources>

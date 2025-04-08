@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnDisplaySettings"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toTopOf="@+id/btnMapLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMapLocation"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_loc"
+        app:layout_constraintBottom_toTopOf="@+id/EntryLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnDisplaySettings" />
+
+    <EditText
+        android:id="@+id/EntryLabel"
+        android:layout_width="223dp"
+        android:layout_height="55dp"
+        android:inputType="text"
+        android:hint ="@string/localization"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/btnMapLocation" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="@string/makePhoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/EntryLabel" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="488dp"
+        android:layout_height="409dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMapLocation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
